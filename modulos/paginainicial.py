@@ -48,7 +48,7 @@ anos de **2018** à **2025**. A análise será realizada utilizando técnicas de
     
     with col2:
         # Uso da "bala de prata" para ajuste automático de imagem
-        st.image("inmet.png", use_container_width=True)
+        st.image("inmet.png", width='stretch')
 
     st.markdown("---")
 

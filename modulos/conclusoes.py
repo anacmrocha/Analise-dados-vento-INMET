@@ -126,7 +126,7 @@ def conclusao(dados_positivos):
         legendas_1 = ["Arraial do Cabo", "Pico do Couto", "Vila Militar 3"]
         cols = st.columns(3)
         for i, img in enumerate(imagens_1):
-            cols[i % 3].image(img, caption=legendas_1[i], use_container_width=True)
+            cols[i % 3].image(img, caption=legendas_1[i], width='stretch')
 
         st.markdown(''' A partir da constatação que Pico do Couto teve um período
          encurtado de baixa intensidade de vento, essa variação também se reflete no histograma. ''')
@@ -139,7 +139,7 @@ def conclusao(dados_positivos):
         legendas_2 = ["Campo dos Goytacazes 2019", "Campo dos Goytacazes 2024"]
         cols = st.columns(2)
         for i, img in enumerate(imagens_2):
-            cols[i % 2].image(img, caption=legendas_2[i], use_container_width=True)
+            cols[i % 2].image(img, caption=legendas_2[i], width='stretch')
         st.markdown(''' Note que o período de baixa na intensidade do vento em 2019 foi entre março a julho, enquanto em 2024 foi somente em abril. 
            Adiante, a estação de Carmo apresentou períodos de altas e baixas semelhantes nos anos de 2019 à 2022, 
            entretanto, no ano de 2024 houveram alterações significativas.
@@ -149,7 +149,7 @@ def conclusao(dados_positivos):
         legendas_3 = ["Carmo 2019", "Carmo 2022", "Carmo 2024"]
         cols = st.columns(3)
         for i, img in enumerate(imagens_3):
-            cols[i % 3].image(img, caption=legendas_3[i], use_container_width=True)
+            cols[i % 3].image(img, caption=legendas_3[i], width='stretch')
 
 
         st.markdown(''' Por fim, é interessante considerar a estação de Rio Claro, que apresentou um alto percentual de perda de dados (ver seção Limpeza de Dados, Página inicial)  ''')
@@ -157,7 +157,7 @@ def conclusao(dados_positivos):
         legendas_5 = ["Rio Claro 2023", "Rio Claro 2025"]
         cols = st.columns(2)
         for i, img in enumerate(imagens_5):
-            cols[i % 2].image(img, caption=legendas_5[i], use_container_width=True)
+            cols[i % 2].image(img, caption=legendas_5[i], width='stretch')
 
         st.markdown(''' Assim podemos concluir que a análise geral de sazonalidade de todas as estações ao longo dos anos nos oferece um **indicativo** de períodos de altas e baixas na intensidade do vento, sendo importante
        considerar a influência das perdas e variações do comportamento de cada estação. ''')
@@ -181,7 +181,7 @@ def conclusao(dados_positivos):
         legendas_6 = ["Três Rios", "Campo dos Goytacazes", "Arraial do Cabo"]
         cols = st.columns(3)
         for i, img in enumerate(imagens_6):
-            cols[i % 3].image(img, caption=legendas_6[i], use_container_width=True)
+            cols[i % 3].image(img, caption=legendas_6[i], width='stretch')
 
         st.markdown('''Sendo assim, é possível afirmar que essa
        interpretação superficial oferece principalmente o reflexo da estação Pico do Couto. ''')
@@ -216,13 +216,13 @@ def conclusao(dados_positivos):
     
             with col1:
                 st.markdown('<div class="galeria-estacoes">', unsafe_allow_html=True)
-                st.image(imagens_7[i], caption=legendas_7[i], use_container_width=True)
+                st.image(imagens_7[i], caption=legendas_7[i], width='stretch')
                 st.markdown('</div>', unsafe_allow_html=True)
 
             with col2:
                 if i + 1 < len(imagens_7):
                     st.markdown('<div class="galeria-estacoes">', unsafe_allow_html=True)
-                    st.image(imagens_7[i+1], caption=legendas_7[i+1], use_container_width=True)
+                    st.image(imagens_7[i+1], caption=legendas_7[i+1], width='stretch')
                     st.markdown('</div>', unsafe_allow_html=True)
 
         st.markdown(''' Assim podemos concluir que em geral, as rajadas mais severas coincidem com as direções de maior incidência de ventos, confirmando 
