@@ -89,7 +89,7 @@ def conclusao(dados_positivos):
 
         st.image("sazonalidadepicodocouto1.png", width=700)
 
-        st.markdown(''' Entretanto, de acordo com os protocolos do NHC (Nacional Hurricane Center), para classificar um fenômeno intenso como um furacão, os ventos devem ser mantidos por um período de pelo menos 10 minutos. 
+        st.markdown(''' Entretanto, de acordo com os protocolos do NHC (Nacional Hurricane Center), para classificar um fenômeno intenso como um furacão, os ventos devem ser mantidos por um período de pelo menos 1 minuto. 
             Assim, podemos concluir que a partir da estrutura dos dados do INMET (Página Inicial), as rajadas máximas atuam como indicadores do potencial de impacto imediato, enquanto a velocidade média do vento valida **ou não** a magnitude e a organização do fenômeno, uma vez que a velocidade média é referente a média dos últimos 10 minutos antes de cada hora.
             ''')
         st.markdown('''Abaixo consideramos o gráfico de correlação entre a velocidade média e a rajada máxima.    ''')
@@ -97,7 +97,8 @@ def conclusao(dados_positivos):
         st.image("relacaovel-raj.png", width=700)
 
         st.markdown(''' Com base no gráfico acima, nas fontes consultadas e na estrutura de registro 
-            dos dados, não é possível confirmar a classificação do fenômeno. ''')
+          dos dados, é factual que naquele momento específico ocorreu uma rajada com força de furacão, porém
+          não é possível confirmar a classificação oficial do fenômeno. ''')
 
         st.subheader("💡Conclusões - Sazonalidade")
         st.markdown(''' Para uma análise coerente da sazonalidade, vamos considerar a **média** das rajadas/velocidades no contexto macro (todas as estações). A justificativa é clara; se considerarmos o **máximo**, é evidente que distorções ocorrerão. Por exemplo, considerando a
