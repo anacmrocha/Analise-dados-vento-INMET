@@ -116,7 +116,7 @@ anos de **2018** à **2025**. A análise será realizada utilizando técnicas de
     ''')
         mostrar_escala_beaufort()
         st.subheader("🧐 Observações")
-        st.markdown(''' Para fins de classificação meteorológica, deve-se priorizar o vento sustentado em detrimento de picos isolados. Segundo o [National Hurricane Center Product Description Document](https://www.nhc.noaa.gov/pdf/NHC_Product_Description.pdf), eventos extremos de vento, como ciclones ou furacões, são definidos pela força média do vento mantida (sustentada por 1 minuto), 
+        st.markdown(''' Para fins de classificação meteorológica, deve-se priorizar o vento sustentado em detrimento de picos isolados. Segundo o [National Hurricane Center Product Description Document](https://www.nhc.noaa.gov/pdf/NHC_Product_Description.pdf), eventos extremos de vento, como ciclones ou furacões, são definidos pela força média do vento mantida (sustentada por 10 minutos), 
         e não apenas por marcações numéricas momentâneas ou rajadas  ''')
         st.subheader("📖 Registro dos dados")
         st.markdown(""" 
